@@ -2,7 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 A basic project to show authentication using JWT and fackback-end service. 
-Please use below credentials to login the app \n
+
+Please use below credentials to login the app
+
+
 Username: vaibhav_ganju@gmail.com
 Password: 1234
 
