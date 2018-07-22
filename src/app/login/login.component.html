@@ -1,0 +1,27 @@
+<div [@moveIn]="">
+  <form #f="ngForm" class="form-signin" (ngSubmit)="signIn(f.value)">
+    <h2 class="form-signin-heading">
+      Please Sign In
+    </h2>
+    <div *ngIf="invalidLogin" class="alert alert-danger">
+      Invalid username and/or password
+    </div>
+  
+    <div class="form-group row">
+      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" id="inputEmail" name="email" ngModel class="form-control">
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" id="inputPassword" name="password" ngModel class="form-control">
+      </div>
+    </div>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>  
+  
+  </form>
+</div>

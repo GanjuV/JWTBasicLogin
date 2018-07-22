@@ -1,0 +1,6 @@
+<div [@moveIn]="">
+  <h1>Home Page</h1>
+  <p *ngIf="isLoggedIn()">
+    Welcome {{authService.currentUser.name}}
+  </p>
+</div>
