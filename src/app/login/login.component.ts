@@ -7,8 +7,7 @@ import { AnimationHelper } from '../router.animations';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  animations: [AnimationHelper.moveIn],
-  // host: {'[@moveIn]': ''}
+  animations: [AnimationHelper.moveIn]
 })
 export class LoginComponent {
   invalidLogin: boolean;
@@ -23,7 +22,7 @@ export class LoginComponent {
       .subscribe(result => {
         if (result) {
           const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl');
-          this.router.navigate([returnUrl || 'home']);
+          this.router.navigate([returnUrl === '/' ? 'home' : returnUrl || 'home']);
         } else {
           this.invalidLogin = true;
         }

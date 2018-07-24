@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   {
     path: '',
     children: [
-      { path: '',
+      { path: 'home',
         component: HomeComponent
       },
       {
@@ -30,10 +30,8 @@ const appRoutes: Routes = [
     component: BodyComponent,
     canActivate: [AuthGuard]
   },
-  { path: 'home',   redirectTo: '', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'no-access', component: NoAccessComponent },
   { path: '**', component: NoAccessComponent},
 
     // otherwise redirect to home
