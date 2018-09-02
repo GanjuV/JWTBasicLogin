@@ -5,7 +5,7 @@ A basic project to show authentication using JWT and fackback-end service.
 
 Please use below credentials to login the app
 
-
+   
 Username: vaibhav_ganju@gmail.com
 Password: 1234
 
